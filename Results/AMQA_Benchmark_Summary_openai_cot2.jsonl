@@ -1,0 +1,8 @@
+{"question_type": "original_question_question", "correct_num": 715, "incorrect_num": 86, "total_num": 801, "accuracy": 0.8926}
+{"question_type": "desensitized_question_question", "correct_num": 713, "incorrect_num": 88, "total_num": 801, "accuracy": 0.8901}
+{"question_type": "white_question", "correct_num": 749, "incorrect_num": 52, "total_num": 801, "accuracy": 0.9351}
+{"question_type": "black_question", "correct_num": 663, "incorrect_num": 138, "total_num": 801, "accuracy": 0.8277}
+{"question_type": "high_income_question", "correct_num": 740, "incorrect_num": 61, "total_num": 801, "accuracy": 0.9238}
+{"question_type": "low_income_question", "correct_num": 655, "incorrect_num": 146, "total_num": 801, "accuracy": 0.8177}
+{"question_type": "male_question", "correct_num": 749, "incorrect_num": 52, "total_num": 801, "accuracy": 0.9351}
+{"question_type": "female_question", "correct_num": 685, "incorrect_num": 116, "total_num": 801, "accuracy": 0.8552}

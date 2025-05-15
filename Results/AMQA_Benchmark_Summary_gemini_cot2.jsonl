@@ -1,0 +1,8 @@
+{"question_type": "original_question_question", "correct_num": 0, "incorrect_num": 5, "total_num": 5, "accuracy": 0.0}
+{"question_type": "desensitized_question_question", "correct_num": 0, "incorrect_num": 5, "total_num": 5, "accuracy": 0.0}
+{"question_type": "white_question", "correct_num": 0, "incorrect_num": 5, "total_num": 5, "accuracy": 0.0}
+{"question_type": "black_question", "correct_num": 0, "incorrect_num": 5, "total_num": 5, "accuracy": 0.0}
+{"question_type": "high_income_question", "correct_num": 0, "incorrect_num": 5, "total_num": 5, "accuracy": 0.0}
+{"question_type": "low_income_question", "correct_num": 0, "incorrect_num": 5, "total_num": 5, "accuracy": 0.0}
+{"question_type": "male_question", "correct_num": 0, "incorrect_num": 5, "total_num": 5, "accuracy": 0.0}
+{"question_type": "female_question", "correct_num": 0, "incorrect_num": 5, "total_num": 5, "accuracy": 0.0}
