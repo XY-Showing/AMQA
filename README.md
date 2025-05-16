@@ -4,9 +4,10 @@ This repository provides the dataset, generation scripts, and evaluation pipelin
 
 ## Overview
 
-AMQA consists of 801 clinical vignettes adapted from USMLE-style multiple-choice questions. Each vignette includes:
+AMQA is created from USMLE-style multiple-choice questions. Each sample includes:
 
-* A neutralized version with sensitive attributes removed
+* An original clinical vignette
+* A neutralized clinical vignette with sensitive attributes removed
 * Six adversarial variants targeting:
 
   * Race (Black vs. White)
