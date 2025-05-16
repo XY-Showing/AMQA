@@ -15,7 +15,7 @@ AMQA is designed to reveal latent biases in LLMs through systematically construc
   - Socioeconomic status (High vs. Low Income)
 - **Multi-agent adversarial generation pipeline**
 - **Automated and human-reviewed evaluation**
-- **Support for individual fairness (counterfactual accuracy shift) and group fairness (accuracy gap)**
+- **Support for individual fairness (counterfactual fairness) and group fairness (accuracy gap)**
 
 ---
 
