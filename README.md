@@ -1,6 +1,6 @@
 # AMQA: Adversarial Medical Question Answering Dataset
 
-This repository provides the dataset, generation scripts, and evaluation pipeline for **AMQA** (Adversarial Medical Question Answering), a benchmark designed to evaluate demographic bias in large language models (LLMs) through counterfactual testing in medical question answering (MedQA) scenarios.
+This repository provides the dataset, generation scripts, and visualization script for **AMQA** (Adversarial Medical Question Answering), a benchmark designed to evaluate demographic bias of large language models (LLMs) in medical question answering (MedQA) scenarios.
 
 ---
 
