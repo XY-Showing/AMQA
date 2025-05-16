@@ -1,83 +1,45 @@
 # AMQA: Adversarial Medical Question Answering Dataset
 
-This repository provides the dataset, generation scripts, and visualization script for **AMQA** (Adversarial Medical Question Answering), a benchmark designed to evaluate demographic bias of large language models (LLMs) in medical question answering (MedQA) scenarios.
+This repository provides the dataset, generation scripts, and evaluation pipeline for **AMQA**, a benchmark for evaluating demographic bias of large language models (LLMs) in medical question answering (MedQA).
 
----
+## Overview
 
-## 📘 Overview
+AMQA consists of 801 clinical vignettes adapted from USMLE-style multiple-choice questions. Each vignette includes:
 
-AMQA contains 4,806 clinical vignettes adapted from the USMLE-style medical QA setting. Each vignette includes:
-
-* A **neutralized** version with sensitive attributes removed
-* **Six adversarial variants** targeting:
+* A neutralized version with sensitive attributes removed
+* Six adversarial variants targeting:
 
   * Race (Black vs. White)
   * Gender (Male vs. Female)
   * Socioeconomic Status (Low vs. High Income)
 
-These variants are generated using a multi-agent adversarial prompting framework and evaluated for bias-triggering behavior across state-of-the-art LLMs. The pipeline combines LLM automation with human review to ensure quality and reliability.
+Variants are generated using a multi-agent LLM pipeline and reviewed by humans for quality control.
 
----
+## Repository Structure
 
-## 📁 Repository Structure
-
-```text
+```
 AMQA/
-🔹️ Scripts/                         # All scripts for generation, evaluation, and analysis
-🔹️️AMQA_generation_batch/          # Multi-agent pipeline for adversarial variant generation
-🔹️️AMQA_Benchmark_LLM/           # Querying LLMs and storing model answers and statistical analyze the result
-🔹️️analyze_results/            # Accuracy, fairness, and significance evaluation
-
-🔹️ Results/                        # Dataset and LLM evaluation results
-🔹️️AMQA_dataset.jsonl          # Final dataset with original, neutralized, and adversarial variants
-🔹️️AMQA_Benchmark_Answer_*.jsonl  # Raw model predictions
-🔹️️AMQA_Benchmark_Summary_*.jsonl # Accuracy and bias statistics
-
-
-🔹️ README.md
+├── Scripts/                         # Generation, evaluation, and analysis scripts
+│   ├── AMQA_generation_batch/
+│   ├── AMQA_Benchmark_LLM/
+│   └── .../
+├── Results/                         # Dataset and benchmark results
+│   ├── AMQA_dataset.jsonl
+│   ├── AMQA_Benchmark_Answer_*.jsonl
+│   └── AMQA_Benchmark_Summary_*.jsonl
+└── README.md
 ```
 
----
-## 📊 Evaluation Metrics
 
-We adopt **individual fairness** and **group fairness**, two widely studied fairness notions in AI\~\cite{chen2024fairness}:
 
-* **Individual Fairness**: Measures counterfactual consistency — models should produce similar outputs for similar patients differing only in sensitive attributes.
-* **Group Fairness**: Measures statistical disparities in accuracy across demographic groups.
-* **Statistical Significance**: McNemar's test is used to evaluate whether answer differences between counterfactual pairs are significant.
+## Evaluation Metrics
 
----
+* **Individual Fairness**: Consistency across counterfactual variants
+* **Group Fairness**: Accuracy disparity between demographic groups
+* **Significance Testing**: McNemar's test for evaluating answer consistency
 
-## 📦 Dataset Contents
+## Dataset
 
-The full AMQA dataset is provided in:
-
-* `Results/AMQA_dataset.jsonl`
-
-Each entry contains:
-
-* Original vignette
-* Neutralized version
-* 6 adversarial variants (based on Race, Gender, SES)
-* Multiple-choice options and ground truth
-
-Model outputs and statistical summaries can be found in:
-
-* `Results/AMQA_Benchmark_Answer_*.jsonl`
-* `Results/AMQA_Benchmark_Summary_*.jsonl`
-
----
-
-## 🧪 Scripts
-
-The `Scripts/` directory contains all code for dataset construction, model evaluation, and result analysis:
-
-* `generate_variants/`: Multi-agent pipeline (Generation-Agent, Fusion-Agent, Evaluation-Agent) to generate adversarial examples.
-* `benchmark_models/`: Code to query LLM APIs (e.g., GPT-4, Claude, Gemini, Deepseek, Qwen) and store predictions.
-* `analyze_results/`: Computes accuracy, bias metrics, and performs statistical testing (e.g., McNemar’s test).
-
----
-
-## 📌 Citation
-
+* `AMQA_dataset.jsonl`: Original, neutralized, and six adversarial variants
+* Answer results and summaries are in `Results/`
 
