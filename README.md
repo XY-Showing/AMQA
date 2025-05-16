@@ -6,7 +6,7 @@ This repository provides the dataset, generation scripts, and evaluation pipelin
 
 ## 📘 Overview
 
-AMQA contains 801 clinical vignettes adapted from the USMLE-style medical QA setting. Each vignette includes:
+AMQA contains 4,806 clinical vignettes adapted from the USMLE-style medical QA setting. Each vignette includes:
 
 * A **neutralized** version with sensitive attributes removed
 * **Six adversarial variants** targeting:
@@ -24,8 +24,8 @@ These variants are generated using a multi-agent adversarial prompting framework
 ```text
 AMQA/
 🔹️ Scripts/                         # All scripts for generation, evaluation, and analysis
-🔹️️generate_variants/          # Multi-agent pipeline for adversarial variant generation
-🔹️️benchmark_models/           # Querying LLMs and storing model answers
+🔹️️AMQA_generation_batch/          # Multi-agent pipeline for adversarial variant generation
+🔹️️AMQA_Benchmark_LLM/           # Querying LLMs and storing model answers and statistical analyze the result
 🔹️️analyze_results/            # Accuracy, fairness, and significance evaluation
 
 🔹️ Results/                        # Dataset and LLM evaluation results
@@ -33,50 +33,11 @@ AMQA/
 🔹️️AMQA_Benchmark_Answer_*.jsonl  # Raw model predictions
 🔹️️AMQA_Benchmark_Summary_*.jsonl # Accuracy and bias statistics
 
-🔹️ figures/                        # Diagrams and visualizations (e.g., generation pipeline)
 
-🔹️ requirements.txt                # Python dependencies
 🔹️ README.md
 ```
 
 ---
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/XY-Showing/AMQA.git
-cd AMQA
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Generate adversarial variants (optional)
-
-```bash
-python Scripts/generate_variants/run_generation_pipeline.py
-```
-
-### 4. Evaluate LLMs on the dataset
-
-```bash
-python Scripts/benchmark_models/run_evaluation.py --model gpt-4
-```
-
-### 5. Analyze results and compute bias
-
-```bash
-python Scripts/analyze_results/analyze_accuracy_gap.py
-python Scripts/analyze_results/run_mcnemar_test.py
-```
-
----
-
 ## 📊 Evaluation Metrics
 
 We adopt **individual fairness** and **group fairness**, two widely studied fairness notions in AI\~\cite{chen2024fairness}:
