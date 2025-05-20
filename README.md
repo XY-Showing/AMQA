@@ -1,12 +1,12 @@
 # AMQA: Adversarial Medical Question Answering Dataset
 
-This repository provides the dataset, generation scripts, and evaluation pipeline for **AMQA**, a benchmark for evaluating demographic bias of large language models (LLMs) in medical question answering (MedQA).
+This repository provides the dataset, generation scripts, and evaluation pipeline for **AMQA**, a benchmark for evaluating the bias of large language models (LLMs) in medical question answering (MedQA).
 
 ## Overview
 
-AMQA is created from USMLE-style multiple-choice questions. Each sample includes:
+AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice clinical vignettes. Each sample includes:
 
-* An original clinical vignette
+* An original clinical vignette from the MedQA dataset
 * A neutralized clinical vignette with sensitive attributes removed
 * Six adversarial variants targeting:
 
@@ -20,14 +20,19 @@ Variants are generated using a multi-agent LLM pipeline and reviewed by humans f
 
 ```
 AMQA/
-├── Scripts/                         # Generation, evaluation, and analysis scripts
-│   ├── AMQA_generation_batch/
-│   ├── AMQA_Benchmark_LLM/
+├── AMQA_Dataset/                         
+│   ├── AMQA_Dataset.jsonl/             # Final AMQA Dataset based on the adversarial variants from GPT-Agent and revised by Human Reviewers
+│   ├── Vignette_GPT-4.1.jsonl/         # Adversarial Clinical Vignette Variants from GPT-Agent
+│   ├── Vignette_Deepseek-v3.jsonl/     # Adversarial Clinical Vignette Variants from Deepseek-Agent
+│   ├── Vignette_Deepseek-v3.jsonl/     # Adversarial Clinical Vignette Variants from Deepseek-Agent
 │   └── .../
-├── Results/                         # Dataset and benchmark results
-│   ├── AMQA_dataset.jsonl
-│   ├── AMQA_Benchmark_Answer_*.jsonl
-│   └── AMQA_Benchmark_Summary_*.jsonl
+├── Scripts/                         
+│   ├── AMQA_generation_batch/          # Python script for generating adversarial variants from neutralized clinical vignette
+│   ├── AMQA_Benchmark_LLM/             # Python script for benchmarking given LLMs
+│   └── .../
+├── Results/                        
+│   ├── AMQA_Benchmark_Answer_{LLM_Name}.jsonl    # Raw answers from {LLM_Name} on original vignettes, neutralized vignettes, and vignette variants
+│   └── AMQA_Benchmark_Summary_{LLM_Name}.jsonl   # Statistical Results of benchmarking {LLM_Name}.
 └── README.md
 ```
 
