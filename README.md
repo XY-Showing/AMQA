@@ -13,6 +13,12 @@
 
 This repository provides the dataset, generation scripts, and evaluation pipeline for **AMQA**, a benchmark for evaluating the bias of large language models (LLMs) in medical question answering (MedQA).
 
+<p align="center">
+  <a href="[https://github.com/XY-Showing/AMQA">
+    <img src="Figures/AMQA-Workflow.svg" style="height: 25em" alt="Adverasarial Medical QA " />
+  </a>
+</p>
+
 ## Overview
 
 AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice clinical vignettes. Each sample includes:
@@ -27,11 +33,7 @@ AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice
 
 Variants are generated using a multi-agent LLM pipeline and reviewed by humans for quality control.
 
-<p align="center">
-  <a href="[https://github.com/XY-Showing/AMQA">
-    <img src="Figures/AMQA-Workflow.svg" style="height: 25em" alt="Adverasarial Medical QA " />
-  </a>
-</p>
+
 
 ## Repository Structure
 
