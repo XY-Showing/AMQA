@@ -1,6 +1,6 @@
 <p align="center">
   <a href="[https://github.com/XY-Showing/AMQA">
-    <img src="Figures/AMQA-Banner.svg" style="height: 15em" alt="Adverasarial Medical QA " />
+    <img src="Figures/AMQA-Banner.svg" style="height: 10em" alt="Adverasarial Medical QA " />
   </a>
 </p>
 
@@ -25,6 +25,12 @@ AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice
   * Socioeconomic Status (Low vs. High Income)
 
 Variants are generated using a multi-agent LLM pipeline and reviewed by humans for quality control.
+
+<p align="center">
+  <a href="[https://github.com/XY-Showing/AMQA">
+    <img src="Figures/AMQA-Workflow.svg" style="height: 15em" alt="Adverasarial Medical QA " />
+  </a>
+</p>
 
 ## Repository Structure
 
