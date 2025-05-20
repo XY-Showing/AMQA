@@ -1,6 +1,6 @@
 <p align="center">
   <a href="[https://github.com/XY-Showing/AMQA">
-    <img src="AMQA_workflow.png" style="height: 30em" alt="Adverasarial Medical QA " />
+    <img src="AMQA-Workflow.png" style="height: 30em" alt="Adverasarial Medical QA " />
   </a>
 </p>
 
