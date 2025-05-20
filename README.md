@@ -1,3 +1,13 @@
+<p align="center">
+  <a href="[https://github.com/XY-Showing/AMQA">
+    <img src="AMQA_workflow.png" style="height: 30em" alt="Adverasarial Medical QA " />
+  </a>
+</p>
+
+
+
+
+
 # AMQA: Adversarial Medical Question Answering Dataset
 
 This repository provides the dataset, generation scripts, and evaluation pipeline for **AMQA**, a benchmark for evaluating the bias of large language models (LLMs) in medical question answering (MedQA).
