@@ -8,20 +8,8 @@
 ---
 
 
-
-# AMQA: Adversarial Medical Question Answering Dataset
-
-This repository provides the dataset, generation scripts, and evaluation pipeline for **AMQA**, a benchmark for evaluating the bias of large language models (LLMs) in medical question answering (MedQA).
-
-<p align="center">
-  <a href="[https://github.com/XY-Showing/AMQA">
-    <img src="Figures/AMQA-Workflow.svg" style="height: 25em" alt="Adverasarial Medical QA " />
-  </a>
-</p>
-
 ## Overview
-
-AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice clinical vignettes. Each sample includes:
+**AMQA** is an adversarial medical question answering dataset for benchmarking the bias of large language models (LLMs) in the medical question answering context. AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice clinical vignettes. Each sample includes:
 
 * An original clinical vignette from the MedQA dataset
 * A neutralized clinical vignette with sensitive attributes removed
@@ -31,8 +19,13 @@ AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice
   * Gender (Male vs. Female)
   * Socioeconomic Status (Low vs. High Income)
 
-Variants are generated using a multi-agent LLM pipeline and reviewed by humans for quality control.
+Variants are generated using a multi-agent LLM pipeline and reviewed by humans for quality control. Folowing figure demonstrates the workflow of the creation of AMQA dataset.
 
+<p align="center">
+  <a href="[https://github.com/XY-Showing/AMQA">
+    <img src="Figures/AMQA-Workflow.svg" style="height: 25em" alt="Adverasarial Medical QA " />
+  </a>
+</p>
 
 
 ## Repository Structure
