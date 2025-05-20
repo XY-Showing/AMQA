@@ -28,7 +28,7 @@ Variants are generated using a multi-agent LLM pipeline and reviewed by humans f
 
 <p align="center">
   <a href="[https://github.com/XY-Showing/AMQA">
-    <img src="Figures/AMQA-Workflow.svg" style="height: 15em" alt="Adverasarial Medical QA " />
+    <img src="Figures/AMQA-Workflow.svg" style="height: 25em" alt="Adverasarial Medical QA " />
   </a>
 </p>
 
