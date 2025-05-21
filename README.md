@@ -79,3 +79,12 @@ To access the AMQA benchmark dataset, you can copy and run the following code:
 from datasets import load_dataset
 ds = load_dataset("Showing-KCL/AMQA")
 ```
+
+
+
+## 📧 Contact
+
+Ying Xiao is the maintainer of the AMQA dataset as well as this repository. If you have any problems or suggestions in using the AMQA dataset as well as our source code, please feel free to reach out by emailing [ying.1.xiao@kcl.ac.uk].
+
+
+
