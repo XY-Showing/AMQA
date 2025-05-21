@@ -16,10 +16,10 @@
 * Six adversarial variants targeting:
 
   * Race (Black vs. White)
-  * Gender (Male vs. Female)
+  * Gender (Female vs. Male)
   * Socioeconomic Status (Low vs. High Income)
 
-Variants are generated using a multi-agent LLM pipeline and reviewed by humans for quality control. Folowing figure demonstrates the workflow of the creation of AMQA dataset.
+Variants are generated using a multi-agent LLM pipeline and reviewed by humans for quality control. The following figure demonstrates the workflow of the creation of the AMQA dataset.
 
 <p align="center">
   <a href="[https://github.com/XY-Showing/AMQA">
@@ -49,7 +49,7 @@ AMQA/
 │   └── AMQA_Benchmark_Summary_{LLM_Name}.jsonl   # Statistical Results of benchmarking {LLM_Name}
 ├── Figures/                        
 │   ├── AMQA_Banner                     # Banner figure of AMQA benchmark dataset
-│   └── AMQA_Workflow                   # Workflow of the creation of AMQA benchmark dataset
+│   └── AMQA_Workflow                   # Workflow of the creation of the AMQA benchmark dataset
 └── README.md
 ```
 
