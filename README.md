@@ -46,7 +46,10 @@ AMQA/
 │   └── .../
 ├── Results/                        
 │   ├── AMQA_Benchmark_Answer_{LLM_Name}.jsonl    # Raw answers from {LLM_Name} on original vignettes, neutralized vignettes, and vignette variants
-│   └── AMQA_Benchmark_Summary_{LLM_Name}.jsonl   # Statistical Results of benchmarking {LLM_Name}.
+│   └── AMQA_Benchmark_Summary_{LLM_Name}.jsonl   # Statistical Results of benchmarking {LLM_Name}
+├── Figures/                        
+│   ├── AMQA_Banner                     # Banner figure of AMQA benchmark dataset
+│   └── AMQA_Workflow                   # Workflow of the creation of AMQA benchmark dataset
 └── README.md
 ```
 
