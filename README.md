@@ -28,7 +28,6 @@ Variants are generated using a multi-agent LLM pipeline and reviewed by humans f
 </p>
 
 
-```
 
 
 ## Repository Structure
@@ -74,4 +73,4 @@ To access the AMQA benchmark dataset, you can copy and run the following code:
 ```
 from datasets import load_dataset
 ds = load_dataset("Showing-KCL/AMQA")
-
+```
