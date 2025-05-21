@@ -11,7 +11,7 @@
 ## Overview
 **AMQA** is an adversarial medical question answering dataset for benchmarking the bias of large language models (LLMs) in the medical question answering context. AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice clinical vignettes. Each sample includes:
 
-* An original clinical vignette from the MedQA dataset
+* An original clinical vignette from the U.S Medical License Examination (USMLE) question bank (MedQA dataset).
 * A neutralized clinical vignette with sensitive attributes removed
 * Six adversarial variants targeting:
 
