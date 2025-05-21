@@ -8,7 +8,7 @@
 ---
 
 
-## Overview
+## 👀Overview
 **AMQA** is an adversarial medical question answering dataset for benchmarking the bias of large language models (LLMs) in the medical question answering context. AMQA is created from the U.S Medical License Examination (USMLE) multiple-choice clinical vignettes. Each sample includes:
 
 * An original clinical vignette from the U.S Medical License Examination (USMLE) question bank (MedQA dataset).
@@ -30,7 +30,7 @@ Variants are generated using a multi-agent LLM pipeline and reviewed by humans f
 
 
 
-## Repository Structure
+## 🏠Repository Structure
 
 ```
 AMQA/
@@ -52,21 +52,23 @@ AMQA/
 
 
 
-## Evaluation Metrics
+## ✍️ Evaluation Metrics
 
 * **Individual Fairness**: Consistency across counterfactual variants
 * **Group Fairness**: Accuracy disparity between demographic groups
 * **Significance Testing**: McNemar's test for evaluating answer consistency
 
-## Details of AMQA Dataset
+## 📰 Details of AMQA Dataset
 
-**Format:** For the convenience of dataset usage, we release our dataset in the format of ".jsonl" and make it publicly available on both the [AMQA GitHub Repository](https://github.com/XY-Showing/AMQA) and the [AMQA Hugging Face Page](https://huggingface.co/datasets/Showing-KCL/AMQA). Currently, there are 801 samples in the AMQA dataset. Each sample contains 39 properties, including "question id", "original question", "neutralized question", 6 "adversarial description", six "adversarial variant", 6 "variant tag", answers on original question, neutralized question, and 6 variants...  
+**Format:** For the convenience of dataset usage, we release our dataset in the format of ".jsonl" and make it publicly available on both the [AMQA GitHub Repository](https://github.com/XY-Showing/AMQA) and the [AMQA Hugging Face Page](https://huggingface.co/datasets/Showing-KCL/AMQA). 
+
+**Properties:** Currently, there are 801 samples in the AMQA dataset. Each sample contains 39 properties, including "question id", "original question", "neutralized question", 6 "adversarial description", six "adversarial variant", 6 "variant tag", answers on original question, neutralized question, and 6 variants...  
 
 
 
 
 
-## Usage
+## 🚀Usage
 
 To access the AMQA benchmark dataset, you can copy and run the following code:
 
